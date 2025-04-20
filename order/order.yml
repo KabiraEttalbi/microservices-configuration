@@ -6,7 +6,7 @@ spring:
     name: order
   datasource:
     username: root
-    url: jdbc:mysql://mysql-db:3306/order
+    url: jdbc:mysql://localhost:3306/order
     password: kab0411
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
