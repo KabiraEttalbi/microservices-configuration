@@ -15,5 +15,13 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
     show-sql: true
+
+cloud:
   config:
-    import: configserver:http://config-server:8888
+    uri: http://config-server:8888
+    fail-fast: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
