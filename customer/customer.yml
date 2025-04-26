@@ -2,11 +2,9 @@ server:
   port: 8081
 
 spring:
-  application:
-    name: customer
   datasource:
+    url: jdbc:mysql://mysql-db:3306/customer
     username: root
-    url: jdbc:mysql://localhost:3306/customer
     password: kab0411
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:

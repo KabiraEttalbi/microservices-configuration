@@ -2,11 +2,9 @@ server:
   port: 8083
 
 spring:
-  application:
-    name: order
   datasource:
+    url: jdbc:mysql://mysql-db:3306/order
     username: root
-    url: jdbc:mysql://localhost:3306/order
     password: kab0411
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
@@ -17,4 +15,3 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
     show-sql: true
-
