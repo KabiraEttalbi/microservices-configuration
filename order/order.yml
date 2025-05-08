@@ -2,11 +2,6 @@ server:
   port: 8083
 
 spring:
-  datasource:
-    url: jdbc:mysql://mysql-db:3306/order
-    username: root
-    password: kab0411
-    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
